@@ -30,7 +30,7 @@ heroes.post('',(req, res)=>{
   
   heroes.get('',(req, res)=>{
    
-    let sql = "select * from tbl_poderes where activo = true";
+    let sql = "select * from tbl_poderes";
   
   
       db.any(sql, e => e.id)
